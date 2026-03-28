@@ -14,7 +14,7 @@ COPY lib/api-client-react/package.json ./lib/api-client-react/
 COPY lib/api-spec/package.json ./lib/api-spec/
 COPY scripts/package.json ./scripts/
 
-RUN pnpm install --ignore-scripts
+RUN pnpm install
 
 COPY artifacts/api-server ./artifacts/api-server
 COPY lib ./lib
