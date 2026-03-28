@@ -1,5 +1,4 @@
 import * as esbuild from "esbuild";
-import pinoPlugin from "esbuild-plugin-pino";
 
 await esbuild.build({
   entryPoints: ["src/index.ts"],
@@ -7,7 +6,6 @@ await esbuild.build({
   platform: "node",
   format: "cjs",
   outfile: "dist/index.cjs",
-  plugins: [pinoPlugin({ transports: ["pino-pretty"] })],
   external: [
     "discord.js",
     "@discordjs/rest",
@@ -15,6 +13,11 @@ await esbuild.build({
     "@discordjs/collection",
     "@discordjs/util",
     "@discordjs/builders",
+    "pino",
+    "pino-http",
+    "pino-pretty",
+    "thread-stream",
+    "pg",
     "pg-native",
     "better-sqlite3",
     "mysql2",
