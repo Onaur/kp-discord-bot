@@ -1,0 +1,17 @@
+{
+  "name": "@workspace/scripts",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "send-test-message": "tsx src/send-test-message.ts"
+  },
+  "dependencies": {
+    "@workspace/db": "workspace:*",
+    "discord.js": "^14.25.1"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "tsx": "catalog:"
+  }
+}

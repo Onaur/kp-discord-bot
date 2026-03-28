@@ -1,0 +1,7 @@
+node_modules
+.local
+.cache
+attached_assets
+**/dist
+**/*.tsbuildinfo
+scripts/src
